@@ -158,21 +158,21 @@ lyr_VescomtatdeCardona_5.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'T
 lyr_VescomtatdeCabrera_6.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
 lyr_VescomtatdeRocabert_7.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
 lyr_BaroniadEntena_8.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_ComtatdUrgell_9.set('fieldAliases', {'CODIMUNI': 'CODIMUNI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
+lyr_ComtatdUrgell_9.set('fieldAliases', {'CODIMUNI': 'CODIMUNI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', 'Prova': 'Prova', });
 lyr_VescomtatdeBas_3.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
 lyr_SenyoriudUrtx_4.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
 lyr_VescomtatdeCardona_5.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
 lyr_VescomtatdeCabrera_6.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
 lyr_VescomtatdeRocabert_7.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
 lyr_BaroniadEntena_8.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_ComtatdUrgell_9.set('fieldImages', {'CODIMUNI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
+lyr_ComtatdUrgell_9.set('fieldImages', {'CODIMUNI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', 'Prova': '', });
 lyr_VescomtatdeBas_3.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
 lyr_SenyoriudUrtx_4.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
 lyr_VescomtatdeCardona_5.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
 lyr_VescomtatdeCabrera_6.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
 lyr_VescomtatdeRocabert_7.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
 lyr_BaroniadEntena_8.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_ComtatdUrgell_9.set('fieldLabels', {'CODIMUNI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
+lyr_ComtatdUrgell_9.set('fieldLabels', {'CODIMUNI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', 'Prova': 'inline label - visible with data', });
 lyr_ComtatdUrgell_9.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
