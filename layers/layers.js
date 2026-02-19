@@ -1,15 +1,15 @@
 var wms_layers = [];
 
 
-        var lyr_ESRISatellite_0 = new ol.layer.Tile({
-            'title': 'ESRI Satellite',
+        var lyr_ESRIWorldImagery_0 = new ol.layer.Tile({
+            'title': 'ESRI World Imagery',
             'type':'base',
             'opacity': 1.000000,
             
             
             source: new ol.source.XYZ({
-            attributions: ' ',
-                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+            attributions: '&nbsp;&middot; <a href="https://wiki.openstreetmap.org/wiki/Esri">Terms & Feedback</a>',
+                url: 'https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
             })
         });
 
@@ -36,143 +36,151 @@ var wms_layers = [];
                 url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}'
             })
         });
-var format_VescomtatdeBas_3 = new ol.format.GeoJSON();
-var features_VescomtatdeBas_3 = format_VescomtatdeBas_3.readFeatures(json_VescomtatdeBas_3, 
+var format_Altresterritoris_3 = new ol.format.GeoJSON();
+var features_Altresterritoris_3 = format_Altresterritoris_3.readFeatures(json_Altresterritoris_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_VescomtatdeBas_3 = new ol.source.Vector({
+var jsonSource_Altresterritoris_3 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_VescomtatdeBas_3.addFeatures(features_VescomtatdeBas_3);
-var lyr_VescomtatdeBas_3 = new ol.layer.Vector({
+jsonSource_Altresterritoris_3.addFeatures(features_Altresterritoris_3);
+var lyr_Altresterritoris_3 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_VescomtatdeBas_3, 
-                style: style_VescomtatdeBas_3,
-                popuplayertitle: 'Vescomtat de Bas',
+                source:jsonSource_Altresterritoris_3, 
+                style: style_Altresterritoris_3,
+                popuplayertitle: 'Altres territoris',
                 interactive: true,
-                title: '<img src="styles/legend/VescomtatdeBas_3.png" /> Vescomtat de Bas'
+                title: '<img src="styles/legend/Altresterritoris_3.png" /> Altres territoris'
             });
-var format_SenyoriudUrtx_4 = new ol.format.GeoJSON();
-var features_SenyoriudUrtx_4 = format_SenyoriudUrtx_4.readFeatures(json_SenyoriudUrtx_4, 
+var format_DominisdelsTrencavell_4 = new ol.format.GeoJSON();
+var features_DominisdelsTrencavell_4 = format_DominisdelsTrencavell_4.readFeatures(json_DominisdelsTrencavell_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_SenyoriudUrtx_4 = new ol.source.Vector({
+var jsonSource_DominisdelsTrencavell_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_SenyoriudUrtx_4.addFeatures(features_SenyoriudUrtx_4);
-var lyr_SenyoriudUrtx_4 = new ol.layer.Vector({
+jsonSource_DominisdelsTrencavell_4.addFeatures(features_DominisdelsTrencavell_4);
+var lyr_DominisdelsTrencavell_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_SenyoriudUrtx_4, 
-                style: style_SenyoriudUrtx_4,
-                popuplayertitle: 'Senyoriu d\'Urtx',
+                source:jsonSource_DominisdelsTrencavell_4, 
+                style: style_DominisdelsTrencavell_4,
+                popuplayertitle: 'Dominis dels Trencavell',
                 interactive: true,
-                title: '<img src="styles/legend/SenyoriudUrtx_4.png" /> Senyoriu d\'Urtx'
+                title: '<img src="styles/legend/DominisdelsTrencavell_4.png" /> Dominis dels Trencavell'
             });
-var format_VescomtatdeCardona_5 = new ol.format.GeoJSON();
-var features_VescomtatdeCardona_5 = format_VescomtatdeCardona_5.readFeatures(json_VescomtatdeCardona_5, 
+var format_readinflunciatolosana_5 = new ol.format.GeoJSON();
+var features_readinflunciatolosana_5 = format_readinflunciatolosana_5.readFeatures(json_readinflunciatolosana_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_VescomtatdeCardona_5 = new ol.source.Vector({
+var jsonSource_readinflunciatolosana_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_VescomtatdeCardona_5.addFeatures(features_VescomtatdeCardona_5);
-var lyr_VescomtatdeCardona_5 = new ol.layer.Vector({
+jsonSource_readinflunciatolosana_5.addFeatures(features_readinflunciatolosana_5);
+var lyr_readinflunciatolosana_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_VescomtatdeCardona_5, 
-                style: style_VescomtatdeCardona_5,
-                popuplayertitle: 'Vescomtat de Cardona',
+                source:jsonSource_readinflunciatolosana_5, 
+                style: style_readinflunciatolosana_5,
+                popuplayertitle: 'Àrea d\'influència tolosana',
                 interactive: true,
-                title: '<img src="styles/legend/VescomtatdeCardona_5.png" /> Vescomtat de Cardona'
+                title: '<img src="styles/legend/readinflunciatolosana_5.png" /> Àrea d\'influència tolosana'
             });
-var format_VescomtatdeCabrera_6 = new ol.format.GeoJSON();
-var features_VescomtatdeCabrera_6 = format_VescomtatdeCabrera_6.readFeatures(json_VescomtatdeCabrera_6, 
+var format_ComtesdeTolosaivassalls_6 = new ol.format.GeoJSON();
+var features_ComtesdeTolosaivassalls_6 = format_ComtesdeTolosaivassalls_6.readFeatures(json_ComtesdeTolosaivassalls_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_VescomtatdeCabrera_6 = new ol.source.Vector({
+var jsonSource_ComtesdeTolosaivassalls_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_VescomtatdeCabrera_6.addFeatures(features_VescomtatdeCabrera_6);
-var lyr_VescomtatdeCabrera_6 = new ol.layer.Vector({
+jsonSource_ComtesdeTolosaivassalls_6.addFeatures(features_ComtesdeTolosaivassalls_6);
+var lyr_ComtesdeTolosaivassalls_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_VescomtatdeCabrera_6, 
-                style: style_VescomtatdeCabrera_6,
-                popuplayertitle: 'Vescomtat de Cabrera',
+                source:jsonSource_ComtesdeTolosaivassalls_6, 
+                style: style_ComtesdeTolosaivassalls_6,
+                popuplayertitle: 'Comtes de Tolosa i vassalls',
                 interactive: true,
-                title: '<img src="styles/legend/VescomtatdeCabrera_6.png" /> Vescomtat de Cabrera'
+                title: '<img src="styles/legend/ComtesdeTolosaivassalls_6.png" /> Comtes de Tolosa i vassalls'
             });
-var format_VescomtatdeRocabert_7 = new ol.format.GeoJSON();
-var features_VescomtatdeRocabert_7 = format_VescomtatdeRocabert_7.readFeatures(json_VescomtatdeRocabert_7, 
+var format_AltresaliatsdeBarcelona_7 = new ol.format.GeoJSON();
+var features_AltresaliatsdeBarcelona_7 = format_AltresaliatsdeBarcelona_7.readFeatures(json_AltresaliatsdeBarcelona_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_VescomtatdeRocabert_7 = new ol.source.Vector({
+var jsonSource_AltresaliatsdeBarcelona_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_VescomtatdeRocabert_7.addFeatures(features_VescomtatdeRocabert_7);
-var lyr_VescomtatdeRocabert_7 = new ol.layer.Vector({
+jsonSource_AltresaliatsdeBarcelona_7.addFeatures(features_AltresaliatsdeBarcelona_7);
+var lyr_AltresaliatsdeBarcelona_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_VescomtatdeRocabert_7, 
-                style: style_VescomtatdeRocabert_7,
-                popuplayertitle: 'Vescomtat de Rocabertí',
+                source:jsonSource_AltresaliatsdeBarcelona_7, 
+                style: style_AltresaliatsdeBarcelona_7,
+                popuplayertitle: 'Altres aliats de Barcelona',
                 interactive: true,
-                title: '<img src="styles/legend/VescomtatdeRocabert_7.png" /> Vescomtat de Rocabertí'
+                title: '<img src="styles/legend/AltresaliatsdeBarcelona_7.png" /> Altres aliats de Barcelona'
             });
-var format_BaroniadEntena_8 = new ol.format.GeoJSON();
-var features_BaroniadEntena_8 = format_BaroniadEntena_8.readFeatures(json_BaroniadEntena_8, 
+var format_ComtesdeBarcelonaivassalls_8 = new ol.format.GeoJSON();
+var features_ComtesdeBarcelonaivassalls_8 = format_ComtesdeBarcelonaivassalls_8.readFeatures(json_ComtesdeBarcelonaivassalls_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_BaroniadEntena_8 = new ol.source.Vector({
+var jsonSource_ComtesdeBarcelonaivassalls_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_BaroniadEntena_8.addFeatures(features_BaroniadEntena_8);
-var lyr_BaroniadEntena_8 = new ol.layer.Vector({
+jsonSource_ComtesdeBarcelonaivassalls_8.addFeatures(features_ComtesdeBarcelonaivassalls_8);
+var lyr_ComtesdeBarcelonaivassalls_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_BaroniadEntena_8, 
-                style: style_BaroniadEntena_8,
-                popuplayertitle: 'Baronia d\'Entença',
+                source:jsonSource_ComtesdeBarcelonaivassalls_8, 
+                style: style_ComtesdeBarcelonaivassalls_8,
+                popuplayertitle: 'Comtes de Barcelona i vassalls',
                 interactive: true,
-                title: '<img src="styles/legend/BaroniadEntena_8.png" /> Baronia d\'Entença'
+                title: '<img src="styles/legend/ComtesdeBarcelonaivassalls_8.png" /> Comtes de Barcelona i vassalls'
             });
-var format_ComtatdUrgell_9 = new ol.format.GeoJSON();
-var features_ComtatdUrgell_9 = format_ComtatdUrgell_9.readFeatures(json_ComtatdUrgell_9, 
+var format_DucatdAquitnia_9 = new ol.format.GeoJSON();
+var features_DucatdAquitnia_9 = format_DucatdAquitnia_9.readFeatures(json_DucatdAquitnia_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_ComtatdUrgell_9 = new ol.source.Vector({
+var jsonSource_DucatdAquitnia_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ComtatdUrgell_9.addFeatures(features_ComtatdUrgell_9);
-var lyr_ComtatdUrgell_9 = new ol.layer.Vector({
+jsonSource_DucatdAquitnia_9.addFeatures(features_DucatdAquitnia_9);
+var lyr_DucatdAquitnia_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_ComtatdUrgell_9, 
-                style: style_ComtatdUrgell_9,
-                popuplayertitle: 'Comtat d\'Urgell',
+                source:jsonSource_DucatdAquitnia_9, 
+                style: style_DucatdAquitnia_9,
+                popuplayertitle: 'Ducat d\'Aquitània',
                 interactive: true,
-                title: '<img src="styles/legend/ComtatdUrgell_9.png" /> Comtat d\'Urgell'
+                title: '<img src="styles/legend/DucatdAquitnia_9.png" /> Ducat d\'Aquitània'
             });
 var group_Corts1300 = new ol.layer.Group({
-                                layers: [lyr_VescomtatdeBas_3,lyr_SenyoriudUrtx_4,lyr_VescomtatdeCardona_5,lyr_VescomtatdeCabrera_6,lyr_VescomtatdeRocabert_7,lyr_BaroniadEntena_8,lyr_ComtatdUrgell_9,],
-                                fold: 'open',
+                                layers: [],
+                                fold: 'close',
                                 title: 'Corts 1300'});
+var group_Territoris = new ol.layer.Group({
+                                layers: [],
+                                fold: 'open',
+                                title: 'Territoris'});
+var group_Territoris1150 = new ol.layer.Group({
+                                layers: [lyr_Altresterritoris_3,lyr_DominisdelsTrencavell_4,lyr_readinflunciatolosana_5,lyr_ComtesdeTolosaivassalls_6,lyr_AltresaliatsdeBarcelona_7,lyr_ComtesdeBarcelonaivassalls_8,lyr_DucatdAquitnia_9,],
+                                fold: 'open',
+                                title: 'Territoris 1150'});
 var group_Mapesbase = new ol.layer.Group({
-                                layers: [lyr_ESRISatellite_0,lyr_ESRIOcean_1,lyr_ESRITerrain_2,],
+                                layers: [lyr_ESRIWorldImagery_0,lyr_ESRIOcean_1,lyr_ESRITerrain_2,],
                                 fold: 'open',
                                 title: 'Mapes base'});
 
-lyr_ESRISatellite_0.setVisible(true);lyr_ESRIOcean_1.setVisible(true);lyr_ESRITerrain_2.setVisible(true);lyr_VescomtatdeBas_3.setVisible(true);lyr_SenyoriudUrtx_4.setVisible(true);lyr_VescomtatdeCardona_5.setVisible(true);lyr_VescomtatdeCabrera_6.setVisible(true);lyr_VescomtatdeRocabert_7.setVisible(true);lyr_BaroniadEntena_8.setVisible(true);lyr_ComtatdUrgell_9.setVisible(true);
-var layersList = [group_Mapesbase,group_Corts1300];
-lyr_VescomtatdeBas_3.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_SenyoriudUrtx_4.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_VescomtatdeCardona_5.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_VescomtatdeCabrera_6.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_VescomtatdeRocabert_7.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_BaroniadEntena_8.set('fieldAliases', {'CODI': 'CODI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', });
-lyr_ComtatdUrgell_9.set('fieldAliases', {'CODIMUNI': 'CODIMUNI', 'Cort': 'Cort', 'Titular': 'Titular', 'Trobadors relacionats': 'Trobadors relacionats', 'Enllaç NARPAN': 'Enllaç NARPAN', 'Prova': 'Prova', });
-lyr_VescomtatdeBas_3.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_SenyoriudUrtx_4.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_VescomtatdeCardona_5.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_VescomtatdeCabrera_6.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_VescomtatdeRocabert_7.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_BaroniadEntena_8.set('fieldImages', {'CODI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', });
-lyr_ComtatdUrgell_9.set('fieldImages', {'CODIMUNI': '', 'Cort': '', 'Titular': '', 'Trobadors relacionats': '', 'Enllaç NARPAN': '', 'Prova': '', });
-lyr_VescomtatdeBas_3.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_SenyoriudUrtx_4.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_VescomtatdeCardona_5.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_VescomtatdeCabrera_6.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_VescomtatdeRocabert_7.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_BaroniadEntena_8.set('fieldLabels', {'CODI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', });
-lyr_ComtatdUrgell_9.set('fieldLabels', {'CODIMUNI': 'hidden field', 'Cort': 'inline label - visible with data', 'Titular': 'inline label - visible with data', 'Trobadors relacionats': 'inline label - visible with data', 'Enllaç NARPAN': 'inline label - visible with data', 'Prova': 'inline label - visible with data', });
-lyr_ComtatdUrgell_9.on('precompose', function(evt) {
+lyr_ESRIWorldImagery_0.setVisible(true);lyr_ESRIOcean_1.setVisible(true);lyr_ESRITerrain_2.setVisible(true);lyr_Altresterritoris_3.setVisible(true);lyr_DominisdelsTrencavell_4.setVisible(true);lyr_readinflunciatolosana_5.setVisible(true);lyr_ComtesdeTolosaivassalls_6.setVisible(true);lyr_AltresaliatsdeBarcelona_7.setVisible(true);lyr_ComtesdeBarcelonaivassalls_8.setVisible(true);lyr_DucatdAquitnia_9.setVisible(true);
+var layersList = [group_Mapesbase,group_Territoris1150];
+lyr_Altresterritoris_3.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_DominisdelsTrencavell_4.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_readinflunciatolosana_5.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_ComtesdeTolosaivassalls_6.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_AltresaliatsdeBarcelona_7.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_ComtesdeBarcelonaivassalls_8.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_DucatdAquitnia_9.set('fieldAliases', {'id': 'id', 'pk_uid': 'pk_uid', 'nom': 'nom', 'Nun_Aut': 'Nun_Aut', 'Color': 'Color', });
+lyr_Altresterritoris_3.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_DominisdelsTrencavell_4.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_readinflunciatolosana_5.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_ComtesdeTolosaivassalls_6.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_AltresaliatsdeBarcelona_7.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_ComtesdeBarcelonaivassalls_8.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_DucatdAquitnia_9.set('fieldImages', {'id': 'TextEdit', 'pk_uid': 'TextEdit', 'nom': 'TextEdit', 'Nun_Aut': 'Range', 'Color': 'TextEdit', });
+lyr_Altresterritoris_3.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'inline label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_DominisdelsTrencavell_4.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'inline label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_readinflunciatolosana_5.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'inline label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_ComtesdeTolosaivassalls_6.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'header label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_AltresaliatsdeBarcelona_7.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'inline label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_ComtesdeBarcelonaivassalls_8.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'inline label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_DucatdAquitnia_9.set('fieldLabels', {'id': 'hidden field', 'pk_uid': 'hidden field', 'nom': 'inline label - visible with data', 'Nun_Aut': 'hidden field', 'Color': 'hidden field', });
+lyr_DucatdAquitnia_9.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
